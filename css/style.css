@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Medium.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: "OpenSans";
 }
 .container {
   max-width: 1440px;
