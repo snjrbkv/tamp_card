@@ -9,7 +9,15 @@
   <body>
     <header>
       <div class="container">
-        <div class="back"><span><</span> Kirish</div>
+        <div class="back">
+          <span><</span>
+          <a
+            href="javascript:void(0);"
+            class="pay-link"
+            onclick="window.history.back();"
+            >Orqaga</a
+          >
+        </div>
         <div class="register-in">
           <h1>Qaytkaningizdan xursandmiz</h1>
           <p>Salom, account ga kirish</p>
@@ -19,7 +27,7 @@
           <form>
             <input type="text" placeholder="username kriting" />
             <input type="password" placeholder="parol ni kriting" />
-            <div class="check">
+            <div class="check" require>
               <a href="/" class="forgot-password">Parolni unutdingizmi ?</a>
             </div>
             <a href="/pages/forgot.html" class="form--btn"> Kirish </a>

@@ -24,3 +24,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// clikc to add class for body

@@ -2,6 +2,30 @@
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf");
 }
+::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::placeholder {
+  color: #000;
+}
+html {
+  scrollbar-width: none;
+  scrollbar-color: #888 #f1f1f1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +35,7 @@
   font-family: "Poppins";
 }
 .container {
-  max-width: 540px;
+  max-width: 400px;
   margin: 0 auto;
 }
 body {
@@ -73,7 +97,7 @@ form > input {
   }
   p {
     color: #3629b7;
-    width: 80%;
+    width: 85%;
     font-size: 16px;
     b {
       color: #3629b7;
@@ -104,4 +128,318 @@ form > input {
 .forgot-password {
   width: 100%;
   text-align: right;
+}
+
+/* transfer */
+
+.transfer-body {
+  padding: 0 3%;
+  background-color: #fff;
+  color: #343434 !important;
+  .back {
+    color: #343434 !important;
+  }
+}
+.transfer-slider {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: scroll;
+  cursor: pointer;
+}
+.input-box {
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #cbcbcb;
+  }
+}
+.custom-fill {
+  fill: #e0e0e0;
+}
+.custom-fill.active {
+  border-radius: 0;
+  fill: #3629b7;
+}
+.pay-link {
+  padding: 0 !important;
+}
+.pay-btn {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+img {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 50px;
+  background-color: #3629b7;
+}
+
+.navbar img {
+  cursor: pointer;
+}
+
+.navbar .my {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar .authentification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .authentification h3 {
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.category {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category .card {
+  width: 100px;
+  height: 100px;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 18px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.category .card:hover {
+  box-shadow: 5px 5px 5px rgb(47, 47, 47);
+  transition: 0.5s all ease;
+}
+
+.category .card h5 {
+  color: #979797;
+  font-size: 12px;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -1px 2px rgb(216, 216, 216);
+}
+
+/* kartalar page  */
+
+.kartalarim-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.kartalarim-navbar a {
+  color: black;
+  font-size: 30px;
+}
+
+.kartalarim-navbar h2 {
+  margin-left: 10px;
+}
+
+.kartalarim-main img:nth-child(3):active {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+/* ayirboshlash */
+.ayirboshlash-main {
+  text-align: center;
+}
+
+.ayirboshlash-main input {
+  width: 200px;
+  height: 44px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+.ayirboshlash-main select {
+  width: 100px;
+  height: 44px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.ayirboshlash-main .arr {
+  margin-top: 20px;
+}
+
+.ayirboshlash-main .ex {
+  margin-top: 20px;
+}
+
+.ayirboshlash-main .ex:active {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+/* tarix */
+
+.tarix-navbar {
+  background-color: #3629b7;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  padding-bottom: 50px;
+}
+
+.tarix-navbar a {
+  color: white;
+  font-size: 30px;
+}
+
+.tarix-navbar h3 {
+  color: white;
+  margin-left: 10px;
+}
+
+.tarix-main {
+  margin-top: -30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.tarix-main h2 {
+  color: #979797;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 45px;
+}
+
+/* sozlamalar */
+
+.sozlamalar-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #3629b7;
+  padding-bottom: 100px;
+}
+
+.sozlamalar-navbar a {
+  color: white;
+  font-size: 30px;
+}
+
+.sozlamalar-navbar h2 {
+  color: white;
+  margin-left: 10px;
+}
+
+.sozlamalar-main {
+  width: 100%;
+  height: auto;
+  margin-top: -25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.sozlamalar-main img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -30px;
+}
+
+.sozlamalar-main h3 {
+  color: #3629b7;
+  margin-bottom: 25px;
+}
+
+.sozlamalar-main h4 {
+  text-align: left;
+  color: #979797;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.sozlamalar-footer {
+  padding: 20px;
+  box-shadow: 0 -1px 2px rgb(216, 216, 216);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sozlamalar-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sozlamalar-footer .icon {
+  width: 100px;
+  height: 36px;
+  background-color: #3629b7;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sozlamalar-footer .icon h5 {
+  color: white;
+  margin-left: 5px;
 }

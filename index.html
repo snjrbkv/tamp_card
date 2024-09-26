@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Tamp card</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="back">
-          <span><</span> <a href="/pages/sign-in.html">Kirish</a>
+          <span><</span>
+          <a
+            href="javascript:void(0);"
+            class="pay-link"
+            onclick="window.history.back();"
+          >
+            Orqaga
+          </a>
         </div>
         <div class="register-in">
           <h1>Hush kelibsiz,</h1>
@@ -29,10 +36,10 @@
                 <b>Term and Condtions</b>
               </p>
             </div>
-            <a href="/" class="form--btn"> Ro'yhatdan o'tish </a>
+            <a href="" class="form--btn"> Ro'yhatdan o'tish </a>
             <div class="have-ac">
               <p>Account bormi ?</p>
-              <a href="/pages/sign-in.html">Kirish</a>
+              <a href="/pages/sign-in.html" class="pay-link">Kirish</a>
             </div>
           </form>
         </div>
