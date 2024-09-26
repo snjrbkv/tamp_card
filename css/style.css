@@ -36,10 +36,10 @@ body {
   }
 }
 .register-in {
-  padding: 5% 3%;
+  padding: 5% 7%;
   margin-top: 5%;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background-color: #fff;
   border-radius: 20px 20px 0 0;
   .img-box {
