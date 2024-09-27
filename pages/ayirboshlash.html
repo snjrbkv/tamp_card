@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Temp Card</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -12,16 +12,19 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="kartalarim-navbar">
-        <a href="home.html">
-          <i class="fa-solid fa-angle-left"></i>
-        </a>
-        <h2>Ayirboshlash</h2>
+    <div class="container" data-aos="fade-up">
+      <div class="back">
+        <span><</span>
+        <a
+          href="javascript:void(0);"
+          class="pay-link"
+          onclick="window.history.back();"
+          >Orqaga</a
+        >
       </div>
 
       <div class="ayirboshlash-main">
-        <img src="home_images/Illustration 5.png" alt="" />
+        <img src="../home_images/Illustration 5.png" alt="" />
 
         <input type="text" value="1000" readonly />
         <select>
@@ -33,7 +36,7 @@
         </select>
 
         <br />
-        <img class="arr" src="home_images/Arrow.png" alt="" />
+        <img class="arr" src="../home_images/Arrow.png" alt="" />
         <br />
 
         <input type="text" value="12 812 190" readonly />
@@ -45,8 +48,15 @@
           <option>Qatar Riyali</option>
         </select>
 
-        <img class="ex" src="home_images/Active.png" alt="" />
+        <img class="ex" src="../home_images/Active.png" alt="" />
       </div>
     </div>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -7,10 +7,18 @@
     <title>Tamp card</title>
   </head>
   <style></style>
-  <body class="transfer-body">
-    <div class="container">
+  <body class="transfer-body" data-aos="fade-up">
+    <div
+      class="container"
+      style="
+        background-color: #fff;
+        padding: 0 1%;
+        height: 100%;
+        max-width: 450px !important;
+      "
+    >
       <div class="transfer-in">
-        <div class="back">
+        <div class="back" style="margin-top: 1%">
           <span style="color: #343434"><</span>
           <a href="/" style="color: #343434">Orqaga</a>
         </div>
@@ -239,6 +247,14 @@
         </form>
       </div>
     </div>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const customFill = document.querySelectorAll(".custom-fill");

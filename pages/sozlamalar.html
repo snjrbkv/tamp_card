@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Temp Card</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -12,16 +12,19 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="sozlamalar-navbar">
-        <a href="home.html">
-          <i class="fa-solid fa-angle-left"></i>
-        </a>
-        <h2>Sozlamalar</h2>
+    <div class="container" data-aos="fade-up">
+      <div class="back">
+        <span><</span>
+        <a
+          href="javascript:void(0);"
+          class="pay-link"
+          onclick="window.history.back();"
+          >Orqaga</a
+        >
       </div>
 
       <div class="sozlamalar-main">
-        <img src="home_images/myphoto.jpg" alt="" />
+        <img src="../home_images/myphoto.jpg" alt="" />
         <h3>Doniyorbek Yarkinov</h3>
         <h4>Ism o'zgartirish</h4>
         <h4>Familiya o'zgartirish</h4>
@@ -33,13 +36,20 @@
 
       <div class="sozlamalar-footer">
         <a href="home.html">
-          <img src="home_images/24.png" alt="" />
+          <img src="../home_images/24.png" alt="" />
         </a>
         <div class="icon">
-          <img src="home_images/Group.png" alt="" />
+          <img src="../home_images/Group.png" alt="" />
           <h5>Sozlama</h5>
         </div>
       </div>
     </div>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
