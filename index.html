@@ -8,43 +8,52 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="back">
           <span><</span>
-          <a
-            href="javascript:void(0);"
-            class="pay-link"
-            onclick="window.history.back();"
-          >
-            Orqaga
-          </a>
+          <a href="pages/sign-in.html" class="pay-link">Royhatdan o'tish</a>
         </div>
         <div class="register-in">
-          <h1>Hush kelibsiz,</h1>
-          <p>Salom, yangi account ochish</p>
+          <h1>Qaytkaningizdan xursandmiz</h1>
+          <p>Salom, account ga kirish</p>
           <div class="img-box">
-            <img src="img/reigster-elements.png" alt="register-el" />
+            <img src="../img/signin-el.png" alt="singin-el" />
           </div>
           <form>
             <input type="text" placeholder="username kriting" />
-            <input type="tel" placeholder="tel number ni kriting" />
             <input type="password" placeholder="parol ni kriting" />
+
             <div class="check">
-              <input type="checkbox" />
+              <input type="checkbox" id="termsCheckbox" />
               <p>
-                By creating an account your aggree to our
-                <b>Term and Condtions</b>
+                Bizning biznesingizga xush kelibsiz
+                <a
+                  href="./pages/forgot.html"
+                  style="text-decoration: underline"
+                >
+                  Xizmat ko'rsatish shartlarini qabul qiling.
+                </a>
               </p>
             </div>
-            <a href="" class="form--btn"> Ro'yhatdan o'tish </a>
+
+            <!-- <div class="check" require>
+              <a href="/" class="forgot-password">Parolni unutdingizmi ?</a>
+            </div> -->
+            <a href="/pages/home.html" class="form--btn"> Kirish </a>
             <div class="have-ac">
-              <p>Account bormi ?</p>
-              <a href="/pages/sign-in.html" class="pay-link">Kirish</a>
+              <p>Account yo'qmi ?</p>
+              <a href="pages/sign-in.html">Royhatdan o'tish</a>
             </div>
           </form>
         </div>
       </div>
     </header>
-    <script src="js/script.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

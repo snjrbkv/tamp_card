@@ -7,8 +7,26 @@
     <title>Tamp card</title>
   </head>
   <body>
-    <h1>next page</h1>
-    <a href="home.html">nep</a>
-    <script src="../js/script.js"></script>
+    <div class="back" style="margin: 0">
+      <span><</span>
+      <a
+        href="javascript:void(0);"
+        class="pay-link"
+        style="margin: 0"
+        onclick="window.history.back();"
+        >Orqaga</a
+      >
+    </div>
+    <h1 style="width: 70%; text-align: center; margin: 0 auto; color: #fff">
+      Sizning malumotlaringizni biz saqlab qoldik va malumotlar tarqalib
+      ketishiga javob bermaymiz 😉
+    </h1>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
